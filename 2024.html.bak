@@ -50,8 +50,7 @@ Surrey <br />
 <p><cite>Harry Potter and the Philosophers Stone</cite> written by JK Rowling in 1997</p><br />
 <p>bdo tag</p><br />
 <bdo dir="rtl">I'm curious to see what this bdo tag is going to do</bdo><br />
-<bdo dir="ltr">I'm forwards!</bdo><br />
-<bdo dir="rtl">I'm backwards!</bdo><br />
+<bdo dir="rtl">I'm backwards!</bdo>
 
 
 
