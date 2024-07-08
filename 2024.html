@@ -8,6 +8,23 @@
 <html lang="en">
 <head>
 <title>Hello world!</title>
+<link rel="stylesheet" href="stylesheet.css" />
+<link rel="icon" type="image/x-icon" href="hogwarts.png" />
+<style type="text/css">
+
+
+
+.rgb {
+color: rgb(255, 99, 71)
+}
+.hsl {
+color: hsl(-40, 100%, 64%)
+}
+.hsla { 
+background-color:hsla(9, 100%, 64%, 0.5);
+}
+
+</style>
 </head> 
 <body>
 
@@ -53,7 +70,48 @@ Surrey <br />
 <bdo dir="ltr">I'm forwards!</bdo><br />
 <bdo dir="rtl">I'm backwards!</bdo><br />
 
+<div class="rgb">I have an rgb colour!</div>
+<div class="hsl">I have a hsl colour!</div>
+<div class="hsla">I have a hsla colour!</div>
 
+<p>HSL stands for Hue, Saturation and Lightness.</p>
+<p>HSLA is an extension of HSL with an Alpha channel (opacity)</p>
+<p><a href="https://www.w3schools.com/html/html_colors_hsl.asp">Here</a> is a good place to play around with it.</p>
+
+<h2>Links</h2>
+
+<p><a href="https://www.w3schools.com/html/html_links.asp" target="_blank">HTML Links! </a>This should open it in a new tab as I've added target="_blank".</p>
+<p><a href="https://www.w3schools.com/html/html_links.asp">HTML Links! </a>This one won't open in a new tab as I haven't added it.</p>
+
+<h2>Images></h2>
+
+<p>Images also allow gifs:</p>
+
+<img src="taylorswift.webp" />
+<img src="erastour.webp" />
+
+<div>This is a background image:</div>
+<p style="background-image: url('cruelsummer.webp'); 
+background-repeat: no-repeat; 
+height: 250px; 
+width: 250px;
+background-size:cover;
+background-position: center center"></p>
+
+<table> 
+	<tr>
+		<th>Name</th>
+		<th>House</th>
+	</tr>
+	<tr> 
+		<td>Harry Potter</td>
+		<td>Gryiffindor</td>
+	</tr>
+	<tr>
+		<td>Luna Lovegood</td>
+		<td>Ravenclaw</td>
+	</tr>
+</table> 
 
 
 </body>
