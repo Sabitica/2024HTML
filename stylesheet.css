@@ -1,5 +1,5 @@
-div {
-	background-color: forestgreen;
+* {
+	font-family: "Calibri", sans-serif;
 }
 
 div, p, img, h2 {
@@ -21,4 +21,9 @@ tr:nth-child(even) {
 
 td:nth-child(even) {
 	background-color: deeppink;
+}
+
+h2 {
+	font-weight: bold;
+	text-decoration: underline;
 }

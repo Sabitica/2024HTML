@@ -1,8 +1,8 @@
-div {
-	background-color: forestgreen;
+* {
+	font-family: "Calibri", sans-serif;
 }
 
-div, p, img {
+div, p, img, h2 {
 	display: block;
 }
 

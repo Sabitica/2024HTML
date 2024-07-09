@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<title>Hello world!</title>
+<link rel="stylesheet" href="stylesheet.css" />
+<link rel="icon" type="image/x-icon" href="hogwarts.png" />
+</head> 
+<body>
+
+<img id="taylor" src="ohhi.gif" />
+
+<h2>Iframes</h2>
+
+<div>An Iframe is used to display a web page within a web page</div> 
+
+<iframe src="html2.html" title="My test html inception!" height="500" width="500" style="border: 1px solid hotpink;"></iframe>
+
+<h2>Javascript</h2>
+
+<div>A noscript tag displays an alternative content to users that have disabled scripts in their browsers 
+or have a browser that doesn't support scripts.</div>
+
+<h2>File paths</h2>
+
+<div>It is best to use relative file paths (if possible)</div>
+
+<h2>head elements</h2>
+
+<div>metadata is data about data (document style, character set, styles, scripts and other meta information)</div>
+<div>title is required in HTML documents!</div>
+
+</body>
+</html>
