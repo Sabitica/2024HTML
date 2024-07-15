@@ -14,11 +14,13 @@
     <form action="#" method="get" novalidate>
 
         <fieldset>
+            <legend>Album</legend>
             <label for="album-name">Album Name:</label>
-            <input type="text" id="album-name" name="album-name">
+            <input type="text" id="album-name" name="album-name" placeholder="Midnights" autofocus>
         </fieldset>
 
         <fieldset>
+            <legend>Surprise Songs</legend>
             <div>Best surprise song on your night:</div>
 
             <input type="radio" id="inthaf" name="primary-color" value="inthaf">
@@ -32,6 +34,7 @@
         </fieldset>
 
         <fieldset>
+            <legend>Cats</legend>
             <div>Best Taylor Swift cat:</div>
             <p>(the answer is all of them)</p>
     
@@ -44,10 +47,11 @@
         </fieldset>
 
         <fieldset>
+            <legend>Favourite Albums</legend>
             <div>Albums</div>
 
             <label for="albums">Choose your fave album(s):</label>
-            <select id="albums" name="albums" size="3" multiple>   
+            <select id="albums" name="albums" size="10" multiple>   
                 <option value="debut">Debut</option>
                 <option value="fearless">Fearless</option>
                 <option value="speaknow">Speak Now</option>
@@ -55,13 +59,48 @@
                 <option value="1989">1989</option>
                 <option value="reputation">Reputation</option>
                 <option value="lover">Lover</option>
-                <option value="folklore">Folklore</option>
+                <option value="folklore" selected>Folklore</option>
                 <option value="evermore">Evermore</option>
                 <option value="midnights">Midnights</option>
                 <option value="ttpd">The Tortured Poets Department</option>
             </select>
         </fieldset>
 
+        <fieldset>
+            <legend>Fearless Era Songs</legend>
+            <input list="fearless-songs" >
+            <datalist id="fearless-songs">
+                <option value="Fearless" >
+                <option value="Love Story" >
+                <option value="You Belong With Me">       
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <legend>Favourite Era Colour</legend>
+            <label for="eracolour">Select your favourite eras colour:</label>
+            <input type="color" id="eracolour" name="eracolour" >
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Eras Tour Date</legend>
+            <label for="era-date">Choose the date you went to see the Eras Tour</label>
+            <input type="date" id="era-date" name="era-date">
+        </fieldset>
+
+        <fieldset>
+            <legend>Number of Albums</legend>
+            <label for="album-qty">Choose number of albums she has:</label>
+            <input type="number" id="album-qty" name="album-qty" min="1" max="11">
+        </fieldset>
+
+        <fieldset>
+            <legend>Sarah's Fave Album</legend>
+            <label for="fave-album">Sarah's Fave Album:</label>
+            <input type="text" id="fave-album" name="fave-album" value="Folklore" readonly>
+        </fieldset>
+
+        <input type="reset" value="Reset">
 
         <input type="submit" value="Submit">
 
