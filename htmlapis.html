@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<title>I come back stronger than a 90s trend</title>
+<link rel="stylesheet" href="stylesheet.css" />
+<link rel="icon" type="image/x-icon" href="evermore.png" />
+<script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+</head> 
+<body>
+
+    <h2>Drag and Drop</h2>
+
+    <div style="border:1px solid black" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <img style="border:1px solid black" id="drag1" src="folklore.png" draggable="true" ondragstart="drag(event)" width="336" height="69" >
+
+
+
+
+</body>
+</html>
