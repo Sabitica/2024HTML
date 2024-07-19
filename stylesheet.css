@@ -2,7 +2,7 @@
 	font-family: "Calibri", sans-serif;
 }
 
-div, p, img, h2 {
+div, p, img, h2, code {
 	display: block;
 }
 

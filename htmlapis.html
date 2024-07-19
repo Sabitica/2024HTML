@@ -29,6 +29,80 @@
     <img style="border:1px solid black" id="drag1" src="folklore.png" draggable="true" ondragstart="drag(event)" width="336" height="69" >
 
 
+    <h1>Web Storage</h1>
+
+    <div>Two types:</div>
+    <div>
+      <b>window.localstorage</b> - stores data with no expiration date.<br />
+      <b>window.sessionStorage</b> - stores data for one session (data is lost when browser tab is closed).
+    </div>
+
+    <div>Always check to see if browser supports localstorage/sessionstorage first:</div>
+
+    <code>
+      if (typeof(Storage) !== "undefined") {
+        code blah blah
+      }
+    </code>
+
+    <h1>Web Workers</h1>
+
+    <div>A web worker is a JavaScript running in the background, without affecting the performance of the page.</div>
+
+    <div>Example code</div>
+    <div>Imagine the below is in a javascript file called count.js:</div>
+    <br />
+
+    <code>
+      var i = 0;
+
+function timedCount() {
+  i = i + 1;
+  postMessage(i);
+  setTimeout("timedCount()",500);
+}
+
+timedCount();
+    </code>
+
+  <br />
+  <div>Now create the worker and send/receive messages:</div>
+  <br />
+
+  <code>
+    if (typeof(w) == "undefined") {
+      w = new Worker("count.js");
+    }
+    w.onmessage = function(event){
+      document.getElementById("result").innerHTML = event.data;
+    };
+  </code>
+  <br />
+  <div>To terminate the web worker, use the terminate() method:</div>
+  <br />
+  <code>
+    w.terminate();
+  </code>
+
+  <h1>Server sent events</h1>
+  <div>Server-Sent Events (SSE) allow a webpage to get updates from the server.</div>
+  <div>a server-sent event is when a web page automatically gets updates from a server.</div>
+
+  <h2>Example code:</h2>
+
+  <code>
+    var source = new EventSource("demo_sse.php");
+source.onmessage = function(event) {
+  document.getElementById("result").innerHTML += event.data + "<br>";
+};
+  </code>
+  <div>When checking that server-sent events are supported, use the below code and object:</div>
+
+  <code>
+    if (typeof(EventSource) !== "undefined") {
+      code blah blah 
+    }
+  </code>
 
 
 </body>
